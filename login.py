@@ -36,7 +36,7 @@ page = br.open(moodleLoginURL)
 #Get the form used by normal user to logon
 br.select_form(nr=1)
 #send login information
-br.form.set_all_readonly(False)	#Allow everything to be written to
+br.form.set_all_readonly(False)			#Allow all forms to be written to
 br.set_handle_robots(False)
 br.form["username"] = raw_input("Enter your Moodle 2 Username: ");
 #Select the form you want to use.
