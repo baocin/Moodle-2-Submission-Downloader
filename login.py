@@ -90,7 +90,7 @@ for key in courses:
 			path = "./College/" + key[5] + "/" + key[4] + "/" + key[0] + "/"
 			if not os.path.exists(path): os.makedirs(path)		#make directories if they don't exist already
 			print "\t\t\t downloading to: " + path + link.text.decode('utf-8')
-			br.open(link.url)		#open the download link
+			br.open(link.url)		#open the link
 			#find the direct link to the file     ex. https://moodle2.uncc.edu/pluginfile.php/792645/mod_resource/content/1/Course%20Information-Logic%20%20Algorithms%20-Spring%202014.docx
 			#~ print br.response().read()
 			#~ br._factory.is_html = True
